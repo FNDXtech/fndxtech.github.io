@@ -1,11 +1,140 @@
 <!DOCTYPE html>
 <html lang="ja">
 <head>
-  <meta charset="UTF-8">
-  <title>My Site</title>
-  <meta name="google-site-verification" content="google97968a324e2b551f" />
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="google-site-verification" content="google53c284cda2a8a7f1" />
+  <title>FNDXtech - デベロッパー公式サイト</title>
+  <style>
+    body {
+      font-family: "Segoe UI", sans-serif;
+      background: #f9f9f9;
+      margin: 0;
+      padding: 0;
+      color: #333;
+    }
+
+    header {
+      position: relative;
+      text-align: center;
+      color: white;
+    }
+
+    header img.header-img {
+      width: 100%;
+      height: auto;
+      display: block;
+    }
+
+    header img.icon {
+      position: absolute;
+      top: 15px;
+      left: 15px;
+      width: 70px;
+      height: 70px;
+      border-radius: 20%;
+      z-index: 2;
+    }
+
+    header .header-text {
+      position: absolute;
+      bottom: 15px; /* 下寄せの余白微調整 */
+      left: 50%;
+      transform: translateX(-50%);
+      z-index: 2;
+      text-align: center;
+      width: 90%;
+    }
+
+    header .header-text p {
+      margin: 0;
+      color: red;
+      text-shadow: 1px 1px 3px rgba(0,0,0,0.5);
+      font-size: clamp(1.2em, 5vw, 2em); /* レスポンシブで自動調整 */
+      line-height: 1.2;
+    }
+
+    main {
+      max-width: 800px;
+      margin: 30px auto;
+      padding: 20px;
+      background: white;
+      border-radius: 10px;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+    }
+
+    h2 {
+      color: #357abd;
+    }
+
+    a {
+      color: #357abd;
+      text-decoration: none;
+    }
+
+    a:hover {
+      text-decoration: underline;
+    }
+
+    footer {
+      text-align: center;
+      font-size: 0.9em;
+      color: #777;
+      padding: 20px;
+    }
+
+    /* モバイル用微調整 */
+    @media (max-width: 480px) {
+      header img.icon {
+        width: 60px;
+        height: 60px;
+        top: 10px;
+        left: 10px;
+      }
+      header .header-text p {
+        font-size: 1.3em;
+      }
+    }
+  </style>
 </head>
 <body>
-  Hello World
+  <header>
+    <img src="header.png" alt="FNDXtech ヘッダー画像" class="header-img" />
+    <img src="icon.png" alt="FNDXtech アイコン" class="icon" />
+    <div class="header-text">
+      <p>アプリ開発をもっと身近に</p>
+    </div>
+  </header>
+
+  <main>
+    <h2>アプリ一覧</h2>
+    <ul>
+      <li><strong>現在位置</strong> — 現在位置の地図と住所を確認できるアプリ</li>
+      <li><strong>タイマー</strong> — 動物、昆虫、野鳥の鳴き声で教えてくれるタイマーアプリ</li>
+      <li><strong>情処試験対策</strong> — 基本、応用、セキュリティ、ネットワーク、データベース、プロジェクトマネジメントの試験対策アプリ</li>
+    </ul>
+
+    <h2>サポート</h2>
+    <p>お問い合わせ・不具合報告は以下のメールアドレスまでお願いします。</p>
+    <p>fndxtech@gmail.com</p>
+
+    <h2>プライバシーポリシー</h2>
+    <p>
+      当社のアプリでは、個人情報の保護を重視しています。  
+      詳細は以下のリンクをご覧ください。  
+      <br />
+      <a href="privacy.html">プライバシーポリシーを読む</a>
+    </p>
+
+    <h2>運営情報</h2>
+    <p>
+      このサイトは FNDXtech により運営されています。<br />
+      © FNDXtech
+    </p>
+  </main>
+
+  <footer>
+    <p>© FNDXtech - All rights reserved.</p>
+  </footer>
 </body>
 </html>
